@@ -39,9 +39,19 @@
             })
    
         })
+        var arrCard=[];
+        var count=0;
         function myCart(el){
-            localStorage.setItem("card",JSON.stringify(el));
-            console.log(el)
+            count++;
+            if(count==1){
+                arrCard.push(el);
+                localStorage.setItem("card",JSON.stringify(arrCard));
+                
+            }else{
+                count=0;
+            }
+           
+            // console.log(el)
         }
 
     }

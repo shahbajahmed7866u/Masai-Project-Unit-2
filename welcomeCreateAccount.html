@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="welcomeCreateAccount.css" />
 
     <title></title>
   </head>
   <body>
+    <div class="mainhai">
     <div class="offerRow">
       <p>
         <span>Give Mom $150 in Gift Cards, earn a $25 Promo Card!</span> Ends
@@ -29,7 +30,7 @@
         </div>
         <div id="cartAndSignin">
         <div class="btnCart">
-          <a href="SignUp.html">Sign in</a>
+          <a href="SignUp.html" id="SignUp"></a>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
         <div id="cart">
@@ -1059,9 +1060,45 @@
       </div>
       <!-- Navbar End -->
     </div>
+    <div class="welcomeMenu">
+        <h3 id="nameHeading"></h3>
+        <p>Use your new account to shop at:</p>
+        <img src="/img/welcomeSignUpP1.PNG" alt="">
+        <button>Shop Now</button>
+        <hr>
+        <img src="/img/welcomeSignUpP2.PNG" alt="">
+        <h3>Get rewarded—it's free!</h3>
+        <p>Enter your mobile number to access all of your Nordy Club benefits today.</p>
+        <div>
+            <div> 
+                <svg width="40px" height="40px" focusable="false" class="nui-icon nui-icon-large-rewards-notes "><path d="M36.587 27.941c-2.941 2.604-5.919 3.499-8.841 3.499-3.348 0-6.626-1.166-9.695-2.26-5.435-1.932-10.22-3.627-15.1-.084l-1.109.894c-.232.207-.465.422-.698.655l-.3.305c-.098.104-.246.18-.344.081V7.96c.193-.166.387-.34.58-.492l.064-.049c6.041-4.688 12.201-2.5 17.703-.544 6.211 2.208 11.574 4.116 17.205-1.766.146-.154.424-.327.535-.043z" fill="none" stroke="#393939" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M3.413 28.89v5.07c0 .284.321.276.419.172l.224-.122c.233-.233.466-.448.698-.655l1.108-.895c4.881-3.542 8.939-.129 14.407 1.706 10.269 3.446 16.288-1.273 19.229-3.877V8.27c0-.327-1.62 1.585-2.809 1.361" fill="none" stroke="#393939" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M22.819 23.364v-11.11h-1.651v6.899l-6.488-7.125v11.06h1.647v-6.797l.059.063z" fill="#393939"></path></svg>
+
+                <p>Earn Nordstrom Notes</p>
+            </div>
+            <div>
+                <svg width="40px" height="40px" focusable="false" class="nui-icon nui-icon-large-alterations "><path d="M39.419 8.117a1.161 1.161 0 0 0-1.527-.509L16.96 17.764l-4.573 2.219-8.685 4.199a5.185 5.185 0 1 0 6.362 2.012l6.895-3.976 3.833-2.235L38.91 9.477c.5-.25.722-.843.509-1.36zM5.683 31.165a2.196 2.196 0 1 1 2.163-2.227v.032c0 1.2-.963 2.177-2.163 2.195zm2.163-20.169a2.195 2.195 0 1 1-2.195-2.195h.032c1.2.017 2.163.995 2.163 2.195zm9.114 6.768-6.895-3.976A5.178 5.178 0 1 0 3.702 15.8l8.685 4.183m-6.704-6.8a2.196 2.196 0 1 1 2.163-2.227v.04a2.195 2.195 0 0 1-2.163 2.187zm15.11 6.8L38.91 30.489c.5.25.722.843.509 1.36-.29.552-.964.777-1.527.509L16.96 22.202" fill="none" stroke="#393939" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+
+                <p>Free Basic Alterations
+                </p>
+            </div>
+            <div><svg width="40px" height="40px" focusable="false" class="nui-icon nui-icon-large-experiences "><path d="M27.81 6.35a2.547 2.547 0 0 0 3.574 0l2.276 2.276a2.532 2.532 0 0 0 3.573 3.574l2.276 2.276L14.319 39.5l-2.276-2.276a2.531 2.531 0 1 0-3.574-3.574l-2.276-2.276A2.532 2.532 0 0 0 2.62 27.8L.51 25.691 25.693.5l2.109 2.276a2.547 2.547 0 0 0 .008 3.574zm-7.211 18.624a.39.39 0 0 0 .326-.326l.486-3.239 3.239-.486a.391.391 0 0 0 .12-.741l-2.929-1.464.549-3.239a.391.391 0 0 0-.661-.342l-2.3 2.332-2.913-1.512a.39.39 0 0 0-.525.525l1.512 2.905-2.356 2.316a.39.39 0 0 0-.072.454.4.4 0 0 0 .414.207l3.231-.541 1.464 2.953a.39.39 0 0 0 .35.215z" fill="none" stroke="#393939" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+           
+                <p>Access to Lifestyle Workshops</p>
+            </div>
+        </div>
+        <p>Mobile Number</p>
+        <input type="text" id="MobileNumber">
+        <p>This connects your in store and online accounts.</p>
+        <p>By tapping Next, you agree to <span> The Nordy Club Terms & Conditions </span>and to us sending you an automated text to confirm your mobile number. Your number must be from the U.S., Canada or Puerto Rico.</p>
+        <button>Next</button>
+    </div>
+  </div>
   </body>
   <script
     src="https://kit.fontawesome.com/cc7490e492.js"
     crossorigin="anonymous"
   ></script>
 </html>
+
+
+<script src="welcomeCreateAccount.js"></script>

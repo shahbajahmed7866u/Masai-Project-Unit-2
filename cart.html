@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="cart.css" />
 
     <title></title>
   </head>
+
   <body>
     <div class="offerRow">
       <p>
@@ -28,15 +29,15 @@
           />
         </div>
         <div id="cartAndSignin">
-        <div class="btnCart">
-          <a href="SignUp.html">Sign in</a>
-          <i class="fa-solid fa-chevron-down"></i>
+          <div class="btnCart">
+            <a href="SignUp.html" id="SignUpName"></a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div id="cart">
+            <div id="upeerCart"></div>
+            <div id="mainCart">0</div>
+          </div>
         </div>
-        <div id="cart">
-          <div id="upeerCart"></div>
-          <div id="mainCart">0</div>
-        </div>
-      </div>
       </div>
       <hr id="hrTagLine" />
       <!-- </div> -->
@@ -1059,9 +1060,73 @@
       </div>
       <!-- Navbar End -->
     </div>
+    <div id="buttons">
+      <button>
+        <p>Shopping Bag (<span id="ShoppingBagNumber"></span>)</p>
+      </button>
+      <button>
+        <p>Saved for Later (0)</p>
+      </button>
+    </div>
+    <div id="wholeCart">
+      <div id="WholecartsItem">
+        <h1>Shopping Bag</h1>
+        <p>Items in your bag are not on hold.</p>
+        <div>
+          <svg width="16px" height="16px" focusable="false" class="_29ZIu">
+            <path
+              class="nui-icon-medium-gift-0"
+              d="M1.5 9.5h13v6h-13zm-1-3h15v3H.5z"
+            ></path>
+            <path class="nui-icon-medium-gift-1" d="M8 6.974v9"></path>
+            <path
+              class="nui-icon-medium-gift-2"
+              d="M12.855 1.798c-.678-.651-2.242-.199-3.498 1.012a5.387 5.387 0 0 0-.636.741c-.752 1.03-.958 2.107-.414 2.631.676.653 2.244.201 3.498-1.009.176-.169.332-.345.475-.521.886-1.094 1.157-2.291.575-2.854m-9.71 0c.676-.652 2.244-.199 3.499 1.012.246.238.454.488.638.741.75 1.03.956 2.107.411 2.631-.676.653-2.242.201-3.5-1.009a6.12 6.12 0 0 1-.472-.521c-.888-1.094-1.159-2.291-.576-2.854"
+            ></path>
+          </svg>
+          <p>Add a gift message when you check out.</p>
+        </div>
+        <div>
+          <p>
+            Free Shipping on Orders over $89 for a limited time or free ship to
+            U.S. stores.
+          </p>
+          <p>Learn more.</p>
+        </div>
+        <hr />
+        <div class="ProductViewCart"></div>
+        <div id="paymentAndTotal">
+<div id="paymentInfo">
+  <p>Accepted Payment Methods</p>
+  <img src="/img/CartP2.PNG" alt="">
+  <p>Need help? Call 1.888.966.6283 or<span> chat with us </span></p>
+  <p>*Pricing and Promotion details.<span>See more.</span></p>
+</div>
+<div id="total">
+  <div><p>Subtotal</p><p id="subTotal"></p></div>
+  <div><p>Shipping</p><p>$0</p></div>
+  <div><p>Estimeted tax</p> <p>$0</p></div>
+  <hr>
+  <div><h3>Estimeted total</h3> <h3 id="estimetedTotal"></h3></div>
+  <div><p>or 4 interest-free payments of $6.87 with</p><img src="/img/CartP3.PNG" alt=""></div>
+  <button>Check Out</button>
+  <div><svg width="16px" height="16px" focusable="false" class="nui-icon nui-icon-large-purchases-medium "><path d="M10.154 13V7.12H9.28v3.652L5.845 7v5.854h.871V9.257l.032.033z" fill="#393939"></path><g fill="none" stroke="#393939" stroke-miterlimit="10"><path d="M15.5 5.652A.652.652 0 0 0 14.848 5H1.152a.652.652 0 0 0-.652.652v8.696c0 .36.292.652.652.652h13.696c.36 0 .652-.292.652-.652z"></path><path d="M4.087 4.913a3.913 3.913 0 1 1 7.826 0" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+  <p>
+    Get a $40 Bonus Note when you use a new Nordstrom credit card.<span> Apply now</span>
+  </p></div>
+  
+</div>
+        </div>
+      </div>
+      <hr id="verticleHr" />
+      <div id="peopleAlsoViewed">
+        <img src="/img/CartP1.PNG" alt="" />
+      </div>
+    </div>
   </body>
   <script
     src="https://kit.fontawesome.com/cc7490e492.js"
     crossorigin="anonymous"
   ></script>
+  <script src="cart.js"></script>
 </html>

@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="navbar.css" />
-
-    <title></title>
+    <title>Document</title>
+    <link rel="stylesheet" href="createAccount.css" />
   </head>
   <body>
     <div class="offerRow">
@@ -28,15 +27,15 @@
           />
         </div>
         <div id="cartAndSignin">
-        <div class="btnCart">
-          <a href="SignUp.html">Sign in</a>
-          <i class="fa-solid fa-chevron-down"></i>
+          <div class="btnCart">
+            <a href="SignUp.html">Sign in</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div id="cart">
+            <div id="upeerCart"></div>
+            <div id="mainCart">0</div>
+          </div>
         </div>
-        <div id="cart">
-          <div id="upeerCart"></div>
-          <div id="mainCart">0</div>
-        </div>
-      </div>
       </div>
       <hr id="hrTagLine" />
       <!-- </div> -->
@@ -1059,9 +1058,42 @@
       </div>
       <!-- Navbar End -->
     </div>
+    <div class="signupPage">
+      <h3>Create Account</h3>
+      <div>
+        <img src="https://www.svgrepo.com/show/28094/credit-card.svg" alt="" />
+        <p>Check out faster</p>
+      </div>
+      <div>
+        <img src="https://www.svgrepo.com/show/20474/truck.svg" alt="" />
+        <p>Track orders easily</p>
+      </div>
+      <div>
+        <img src="https://www.svgrepo.com/show/74469/cloud.svg" alt="" />
+        <p>Use one sign-in across our brands</p>
+      </div>
+      <p><span>*</span>Required</p>
+      <form action="" id="SignUpForm">
+        <p>Email</p>
+        <p id="email"></p>
+        <span>Edit</span>
+        <p>First name<span>*</span></p>
+        <input type="text" id="fname" />
+        <p>Last name<span>*</span></p>
+        <input type="text" id="lname" />
+        <p>Create password<span>*</span></p>
+        <input type="password" id="password" />
+        <label class="accept">
+          <input type="checkbox" />
+          <span class="checkmark">Keep me signed in. <span>Details</span></span>
+        </label>
+        <p>
+          By tapping Next, you agree to our <span>Privacy Policy</span>and
+          <span>Terms & Conditions.</span>
+        </p>
+        <input type="submit" id="submit" value="Create Account" />
+      </form>
+    </div>
   </body>
-  <script
-    src="https://kit.fontawesome.com/cc7490e492.js"
-    crossorigin="anonymous"
-  ></script>
 </html>
+<script src="createAccount.js"></script>

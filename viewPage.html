@@ -87,7 +87,7 @@
    var data= JSON.parse(localStorage.getItem("view"));
 
     var dataCart=[];
-    console.log(data)
+    // console.log(data)
 
     dispaly(data);
     function dispaly(data){
@@ -124,6 +124,10 @@
             })
    
         })
+        function myCart(el){
+            localStorage.setItem("card",JSON.stringify(el));
+            console.log(el)
+        }
 
     }
 </script>

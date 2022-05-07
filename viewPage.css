@@ -110,4 +110,44 @@ img:hover {
      text-decoration: none;
  }
 
+            @media all and (min-width:50px) and (max-width:450px){
+                #main>div{
+                
+                width: 90%;
+            }
+           
+            #main>div>div:nth-child(1){
+                width: 45%;
+                margin: 0%;
+                padding-top: -20%;
+            
+            }
+
+            #main>div>div:nth-child(2){
+                width: 50%;
+                margin: 0%;
+                padding-right: 42px;
+            }
+            }
+
+            @media all and (min-width:451px) and (max-width:750px){
+                #main>div{
+                
+                    width: 80%;
+                }
+               
+                #main>div>div:nth-child(1){
+                    width: 45%;
+                    margin: 0%;
+                    padding-top: -20%;
+                
+                }
+                
+                #main>div>div:nth-child(2){
+                    width: 50%;
+                    margin: 0%;
+                    padding-right: 42px;
+                }
+            }
+
 

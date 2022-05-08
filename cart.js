@@ -5,3 +5,7 @@ if(document.querySelector("#SignUpName").innerText=="Hi,"+obj.fname+obj.lname){
     document.querySelector("#SignUpName").href="#"
   
 }
+
+var arr = JSON.parse(localStorage.getItem("card"))
+
+console.log(arr)

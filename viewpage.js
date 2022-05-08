@@ -38,7 +38,7 @@ function dispaly(data){
         })
 
     })
-    var arrCard=[];
+    var arrCard=JSON.parse(localStorage.getItem("card"))||[];
         var count=0;
         function myCart(el){
             count++;

@@ -10,7 +10,7 @@ body {
   overflow: hidden;
   background-color: transparent;
   font-family: Arial, Helvetica, sans-serif;
-  
+
   display: flex;
   justify-content: space-around;
 }
@@ -73,7 +73,6 @@ body {
 
 /* Create three equal columns that floats next to each other */
 .column {
-  
   float: left;
   width: 16%;
   margin: auto;
@@ -114,7 +113,10 @@ h3 > a:hover {
   font-weight: bold;
 }
 .blue {
-  color: #00819d !important ;
+  color: #333333 !important ;
+}
+.blue:hover {
+  color: #00819d !important;
 }
 .blue:hover > hr {
   border-bottom: 3px solid #00819d !important;
@@ -146,14 +148,14 @@ h3 > a:hover {
 }
 .column > .shopDress {
   position: absolute;
-  bottom: 130px;
+  bottom: 115px;
   color: #00819d;
   text-decoration: underline;
   /* text-decoration: underline; */
 }
 .column > .shopActive {
   position: absolute;
-  bottom: 100px;
+  bottom: 90px;
   color: #00819d;
   text-decoration: underline;
   /* text-decoration: underline; */
@@ -173,10 +175,11 @@ h3 > a:hover {
   margin-top: 20px !important;
   margin-bottom: 20px !important;
   margin: auto;
-  width: 85%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* gap: 30px; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -196,13 +199,13 @@ h3 > a:hover {
   width: 100%;
   padding: 0 10px;
   font-size: 18px;
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
 }
 
 #searchBar:focus {
   outline: none;
 }
-img {
+.logoCon > img {
   background-size: 83px 36px;
   height: 36px;
   width: 83px;
@@ -231,21 +234,88 @@ img {
 .btnCart > i {
   color: #bbbbbb;
 }
-#cart > i{
-  font-size: 23px;
-  /* color:; */
-}
-.offerRow{
-  background-color: #00819d;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 1px;
-  color: white;
-  text-align: center;
-}
-.offerRow > p{
-  font-size: 18px;
-}
-.offerRow > p> a{
-  color: white;
 
+#cartAndSignin {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
+
+#cart > :nth-child(1) {
+  width: 10px;
+  height: 5px; /* as the half of the width */
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 1px solid rgb(0, 0, 0);
+  border-bottom: 0;
+  margin: auto;
+}
+#cart > :nth-child(2) {
+  border: 1px solid black;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offerRow {
+  background-color: #00819d;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* padding: 1px; */
+  color: white;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  /* align-self: center; */
+
+  height: 42px;
+}
+.offerRow > p {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 16px; */
+  /* font-weight: bold; */
+}
+.offerRow > p > span {
+  /* font-size: 16px; */
+  font-weight: bold;
+}
+.offerRow > p > a {
+  color: white;
+}
+#fullMenu {
+  width: 95%;
+  margin: auto;
+  /* border: 2px solid red; */
+}
+#hrTagLine {
+  border: none;
+  height: 1px;
+  background-color: rgb(199, 199, 199);
+}
+
+@media all and (min-width: 450px) and (max-width: 750px) {
+  .offerRow,
+  .offerRow > p {
+    font-weight: 100;
+    font-size: 10px;
+    line-break: auto;
+    /* z-index: -1; */
+  }
+  .btnCart > a {
+    font-size: 12px;
+  }
+  .searchdiv > #searchBar {
+    height: 40px;
+    font-size: 18px;
+  }
+  .searchdiv > i {
+    font-size: 18px;
+  }
+  .logoCon > img {
+    height: 36px;
+    width: 60px;
+  }
+  .cartAndSignin {
+    justify-content: space-around;
+  }
 }

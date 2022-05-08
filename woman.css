@@ -1,13 +1,14 @@
 
- body{
+
+ .container{
    display: flex;
-   width: 95%;
+    /* width: 95%; */
    margin: 0%;
    padding: 0%;
-   padding-top: 10%;
+   padding-top: 10%; 
    
  }
- body>div:nth-child(1){
+ .container>div:nth-child(1){
    width: 20%;
    border-right: 5px rgb(190, 190, 190) solid;
    position: relative;
@@ -16,7 +17,7 @@
    padding-left: 4%;
    height: 500px;
  }
- body>div:nth-child(2){
+ .container>div:nth-child(2){
    overflow:scroll;
    width: 80%; 
    padding-left: 30px;
@@ -26,7 +27,7 @@
    /* padding-left: 60%; */
  }
  
- body>div::-webkit-scrollbar {
+ .container>div::-webkit-scrollbar {
    width: 0%;
  }
 

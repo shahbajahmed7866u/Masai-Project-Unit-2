@@ -5,7 +5,7 @@
     grid-gap: 10px;
     display: flex;
     justify-content: flex-end;
-    font-family: Brandon Text,Arial,sans-serif;
+   
     margin-top: 20px;
     
 }
@@ -52,12 +52,14 @@ button:hover{
     background-color: #f9f9f9;
     margin-top: 20px;
     font-family: Brandon Text,Arial,sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 1;
 }
 .left-content{
     display: flex;
     column-gap: 10px;
+    font-family: Brandon Text,Arial,sans-serif;
+    font-weight: -50;
 }
 a{
     color: grey;
@@ -112,3 +114,92 @@ h3{
     color: black;
 }
 
+/* For Medium Screens */
+
+@media all and (min-width: 451px) and (max-width:750px){
+     .left-content{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         grid-template-rows: repeat(3,auto);
+     }
+     .right-content{
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         grid-template-rows: repeat(1,auto);
+         background-color: #f9f9f9;
+         height: auto;
+     }
+     .bottom-content{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         grid-template-rows: repeat(2,auto);
+         line-height: 20px;
+         margin-left: 5px;
+     }
+     #social-icons{
+        display: list-item;
+    
+    }
+    #footer-1-box{
+        flex-direction: column;
+    }
+    .upper-box{
+        text-align: center;
+    }
+    .Emai-box{
+        width: 90%;
+        margin: auto;
+    }
+    .signupbox{
+        width: 90%;
+        margin: auto;
+    }
+} 
+
+/* For Small Screens */
+
+
+@media all and (min-width: 200px) and (max-width: 450px){
+
+    .left-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,auto);
+    }
+    .right-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,auto);
+        background-color: #f9f9f9;
+        margin-left: 10px;
+    }
+    .bottom-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        line-height: 30px;
+        margin-left: 5px;
+        gap: 10px;
+    }
+    #social-icons{
+        display: list-item;
+    
+    }
+    #footer-1-box{
+        flex-direction: column;
+    }
+    .upper-box{
+        text-align: center;
+    }
+    .Emai-box{
+        width: 90%;
+        margin: auto;
+    }
+    .signupbox{
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+}
